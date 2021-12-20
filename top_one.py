@@ -7,8 +7,7 @@ def top_one(arr):
             repeat.append(1)
         else :
             y = nums.index(x)
-            num = repeat[y] + 1
-            repeat[y] = num
+            repeat[y] += 1
     
     maxo = max(repeat)
     result = []
