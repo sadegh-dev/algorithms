@@ -18,7 +18,7 @@ def search_insert(arr, num):
 
 
 print( search_insert([1,3,5,6], 0) )
-print( search_insert([1,3,5,6], 1) )
+print( search_insert([1,3,5,6], 3) )
 print( search_insert([1,3,5,6], 2) )
 print( search_insert([1,3,5,6], 5) )
 print( search_insert([1,3,5,6], 7) )
