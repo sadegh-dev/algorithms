@@ -48,4 +48,4 @@ print( top_one([7,2,7,2,1]) )
 print( top_one([1,2,7,2,1,4,7]) )
 
 print( top_one2([7,2,7,2,1]) )
-print( top_one2([1,2,7,2,1,4,7]) )
+#print( top_one2([1,2,7,2,1,4,7]) )
