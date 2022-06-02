@@ -1,7 +1,5 @@
 
-# None recursive function
 def binary_search(arr, item):
-    a = []
     ll = len(arr)
     if ll == 1 :
         if arr[0] == item :
@@ -14,18 +12,20 @@ def binary_search(arr, item):
         else :
             return False
     else :
-        mid = len(arr) // 2
-        if arr[mid] < item :
-            a.extend(arr[:mid], item)
-            binary_search(a, item)
+        mid = ll // 2
+        if arr[mid] == item :
+            return True
+        elif item < arr[mid] :
+            print(arr[:mid])
+            return binary_search(arr[:mid-1], item)
         else :
-            a.extend(arr[mid:], item)
-            binary_search(a, item)
+            print(arr[mid:])
+            return binary_search(arr[mid:], item)
 
 
 #################################
-ar = [10]
-item = 10
+ar = [20,30,40,50,60,70]
+item = 70
 
 result = binary_search(ar, item)
 
