@@ -1,3 +1,9 @@
-x = 13
-y = 3
-print(x // y)
+x = 1
+
+def hello(n):
+    print(n)
+    if(1<n):
+        return hello(n-1)
+
+
+result = hello(5)
