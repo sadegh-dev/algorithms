@@ -1,5 +1,6 @@
 def is_isomorphic(x,y):
-    pass
+    if not (len(x) == len(y)):
+        return False
 
 
 
