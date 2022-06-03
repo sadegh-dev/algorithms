@@ -1,23 +1,27 @@
 
-def search_insert(arr, item):
-    try:
-        return arr.index(item)
-    except:
-        for x in arr :
-            if item <= x :
-                return arr.index(x)
- 
 
-arr = [10,20,30,40,50,60,70,80,90,100,110]
+def is_isomorphic(x,y):
+    if not (len(x) == len(y)):
+        return False
+    
+    ref = dict()
+    for xx , yy in zip(x,y):
+        pos = ref.setdefault(xx,yy)
+        if pos != yy :
+            return False
 
-item = 20
-result = search_insert(arr, item)
+    return True
+
+
+##############################3
+
+x = "helloe"
+y = "yipptp"
+
+result = is_isomorphic(x,y)
 print(result)
 
-item = 50
-result = search_insert(arr, item)
-print(result)
 
-item = 43
-result = search_insert(arr, item)
-print(result)
+
+
+
