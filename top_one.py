@@ -44,9 +44,40 @@ def top_one2(arr):
 
 
 
+# Solution3 - Use zip function
+
+def top_one3(arr):
+    key_result = list()
+    result = list()
+    rres = list()
+
+    for x in arr :
+        if x not in key_result :
+            key_result.append(x)
+            result.append(arr.count(x))
+
+
+    max_ = max(result)
+
+    for k, r in zip(key_result, result):
+        if r == max_ :
+            rres.append(k)
+
+    return list((rres, max_))
+
+
+
+
+
+
 print( top_one([7,2,7,2,1]) )
 print( top_one([1,2,7,2,1,4,7]) )
 
 print( top_one2([7,2,7,2,1]) )
 print( top_one2([1,2,7,2,1,4,7]) )
 print( top_one2([1,2,7,2,1,4,7,7]) )
+
+
+print( top_one3([7,2,7,2,1]) )
+print( top_one3([1,2,7,2,1,4,7]) )
+print( top_one3([1,2,7,2,1,4,7,7]) )
