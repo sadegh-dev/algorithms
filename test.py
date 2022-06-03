@@ -1,29 +1,23 @@
 
-# solution2 
-# (MIN and MAX must be members of the list)
-def limit(arr, min_=None, max_=None):
+def search_insert(arr, item):
     try:
-        mi = arr.index(min_)
+        return arr.index(item)
     except:
-        mi = 0
-    try:
-        mx = arr.index(max_)+1
-    except:
-        mx = len(arr)
-    return arr[mi:mx]
-
-
-
+        for x in arr :
+            if item <= x :
+                return arr.index(x)
+ 
 
 arr = [10,20,30,40,50,60,70,80,90,100,110]
-min_ = 30
-max_ = 90
 
-result = limit(arr, min_, max_)
+item = 20
+result = search_insert(arr, item)
 print(result)
 
-result = limit(arr, min_ )
+item = 50
+result = search_insert(arr, item)
 print(result)
 
-result = limit(arr, max_ = max_)
+item = 43
+result = search_insert(arr, item)
 print(result)
