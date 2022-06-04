@@ -16,27 +16,22 @@ def zig_zag_iterator_1(arr1, arr2) :
     for a1,a2 in zip(arr1, arr2):
         result.append(a1)
         result.append(a2)
+    
+    diff_ = len(arr1) - len(arr2)
+    if diff_ > 0 :
+        result.extend(arr1[-diff_:])
+    elif diff_ < 0 :
+        result.extend(arr2[abs(-diff_)+1:])
+    
     return result
 
 
 ####################################
 
-l1 = [10, 30, 90, 110, 70]
-l2 = [20, 60, 40, 100, 60]
+l1 = [10, 30, 90]
+l2 = [20, 60, 40, 50, 600]
 
 result = zig_zag_iterator_1(l1, l2)
 
 print(result)
 
-
-
-
-a = [1,2,3,4]
-b = [10,11,12,13,15]
-
-ll = list()
-for x,y in zip(a,b):
-    ll.append(x)
-    ll.append(y)
-
-print(ll)
