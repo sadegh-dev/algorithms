@@ -1,6 +1,4 @@
 
-
-
 def bead_sort(arr):
     result = list()
     result.append(arr[0])

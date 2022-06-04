@@ -16,10 +16,10 @@ def binary_search(arr, item):
         if arr[mid] == item :
             return True
         elif item < arr[mid] :
-            print(arr[:mid])
+            #print(arr[:mid])
             return binary_search(arr[:mid], item)
         else :
-            print(arr[mid:])
+            #print(arr[mid:])
             return binary_search(arr[mid:], item)
 
 

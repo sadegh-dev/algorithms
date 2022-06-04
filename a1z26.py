@@ -1,5 +1,4 @@
 
-
 def encode_ (string_):
     result = list()
     for x in string_:
