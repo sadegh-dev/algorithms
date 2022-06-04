@@ -9,7 +9,7 @@
 
 """
 
-# Solution1
+# Solution1 --------------------------
 
 def zig_zag_iterator_1(arr1, arr2) :
     result = list()
@@ -21,14 +21,14 @@ def zig_zag_iterator_1(arr1, arr2) :
     if diff_ > 0 :
         result.extend(arr1[-diff_:])
     elif diff_ < 0 :
-        result.extend(arr2[abs(-diff_)+1:])
+        result.extend(arr2[diff_:])
     
     return result
 
 
 ####################################
 
-l1 = [10, 30, 90]
+l1 = [10, 30, 90, 66]
 l2 = [20, 60, 40, 50, 600]
 
 result = zig_zag_iterator_1(l1, l2)
