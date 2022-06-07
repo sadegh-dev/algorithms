@@ -20,4 +20,12 @@ def create_3bits():
     return result
 
 
+def create_leters26_3bits ():
+    result = list()
+    for x in range(26):
+        result.append(create_3bits())
+    return result
+
+
+letters_26 = create_leters26_3bits()
 
