@@ -1,6 +1,6 @@
-list_ = ['a','b','c','d','e','f','g','h','i']
+a = ['9','t','4',6,'y',77,[5,'r',9],'qq',100]
 
-print(list_[2:6])
+x = slice(5,100)
 
-b = slice(2,6)
-print(list_[b])
+print(a[x])
+
