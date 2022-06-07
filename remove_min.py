@@ -5,9 +5,12 @@
 
 """
 
-def remove_min(arr):
-    pass
+# Solution 2
 
+def remove_min(arr):
+    result = min(arr)
+    arr.remove(result)
+    return result
 
 
 ##############################3
