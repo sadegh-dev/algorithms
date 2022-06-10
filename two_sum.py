@@ -6,16 +6,18 @@
 
 
 def two_sum(list_, sum):
-    for x in list_ :
-        for y in list_[1:-1]:
-            pass
-
-
+    result = list()
+    ll = len(list_)
+    for x in range(ll-1):
+        for y in range(1,ll) :
+            if list_[x]+list_[y] == sum and x != y :
+                result = list((x,y))
+                return result
 
 ########################
 
 list_a = [2,5,11,15]
-sum = 22
+sum = 16
 
 result = two_sum(list_a, sum)
 
