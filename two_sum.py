@@ -5,9 +5,8 @@
 """
 
 def two_sum(list_, num):
-    ll = len(list_)
-    for x in range(ll-1):
-        for y in range(1, ll):
+    for x in list_ :
+        for y in list_[1:-2]:
             pass
 
 
