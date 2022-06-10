@@ -5,7 +5,10 @@
 """
 
 def two_sum(list_, num):
-    pass
+    ll = len(list_)
+    for x in range(ll-1):
+        for y in range(1, ll):
+            pass
 
 
 
