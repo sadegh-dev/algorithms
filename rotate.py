@@ -8,12 +8,23 @@
 
 
 def rotate(txt, num):
-    pass
+    ll = len(txt)
+    if num > ll :
+        num_rotate = num % ll
+    else :
+        num_rotate = num
+    
+    the_rotate = txt[:num_rotate]
+    newtxt = txt[num_rotate:]
+
+
 
 
 result = rotate("hello",3)
-print(result)
+#print(result)
 
 result = rotate("hello",7)
-print(result)
+#print(result)
 
+
+print(7%5)
