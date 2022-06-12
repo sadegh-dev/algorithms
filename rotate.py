@@ -1,11 +1,10 @@
 """
     rotate
         rotate("yellow",2) return "llowye"
-        rotate("yellow",5) return "yellow"
-        rotate("yellow",6) return "ellowy"
-        rotate("yellow",7) return "llowye" 
+        rotate("yellow",5) return "wyello"
+        rotate("yellow",6) return "yellow"
+        rotate("yellow",7) return "ellowy" 
 """
-
 
 def rotate(txt, num):
     ll = len(txt)
@@ -16,15 +15,24 @@ def rotate(txt, num):
     
     the_rotate = txt[:num_rotate]
     newtxt = txt[num_rotate:]
+    newtxt = newtxt+the_rotate
+    return newtxt
 
 
+################################
 
 
-result = rotate("hello",3)
-#print(result)
+result = rotate("yellow",2)
+print(result)
 
-result = rotate("hello",7)
-#print(result)
+result = rotate("yellow",5)
+print(result)
+
+result = rotate("yellow",6)
+print(result)
 
 
-print(7%5)
+result = rotate("yellow",7)
+print(result)
+
+
