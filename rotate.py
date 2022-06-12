@@ -22,13 +22,13 @@ def rotate(txt, num):
 ################################
 
 
-result = rotate("yellow",2)
+result = rotate("hello",2)
 print(result)
 
-result = rotate("yellow",5)
+result = rotate("katty",17)
 print(result)
 
-result = rotate("yellow",6)
+result = rotate("bye",6)
 print(result)
 
 
