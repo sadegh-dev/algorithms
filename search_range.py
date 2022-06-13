@@ -6,7 +6,19 @@
 """
 
 def search_range(list_,num):
-    pass
+    result = list()
+    ll = len(list_)
+    for x in range(ll):
+        if list_[x] == num :
+            result.append(x)
+    if len(result) == 0 :
+        return [None, None]
+    else : 
+        list_result = list()
+        list_result.append(result[0])
+        list_result.append(result[-1])
+        return list_result
+
 
 
 ################################
