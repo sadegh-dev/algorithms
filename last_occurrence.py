@@ -5,7 +5,9 @@
 """
 
 def last_occurrence(list_, num) :
-    pass
+    ll = len(the_list)
+    for x in range(ll):
+        pass
 
 
 ############################
