@@ -23,7 +23,7 @@ def binary_search(arr, item):
             return binary_search(arr[mid:], item)
 
 
-#################################
+#############################
 ar = [10,20,30]
 item = 35
 
