@@ -39,5 +39,5 @@ def limit(arr, min_=None, max_=None):
 
 print(limit([1,3,4,5,6,7,8,9,10]))
 print(limit([1,3,4,5,6,7,8,9,10], 3, 8))
-print(limit([1,3,4,5,6,7,8,9,10], 7))
+print(limit([1,3,4,5,6,7,8,9,10], 9))
 print(limit([1,3,4,5,6,7,8,9,10], max=6))
